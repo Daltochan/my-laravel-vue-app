@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <l-map @click="handleMapClick" :zoom="zoom" :center="center" style="height: 100vh; width: 100%;">
+        <l-map @click="handleMapClick" :minZoom="minZoom" :zoom="zoom" :center="center" >
             <l-tile-layer :url="url" :attribution="attribution"></l-tile-layer>
         </l-map>
     </div>
@@ -27,6 +27,7 @@ export default {
     data() {
         return {
             zoom: 19,
+            minZoom: 5,
             center: [52.40825733102544, 16.9335150718689],
             url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
             attribution: '© OpenStreetMap contributors'
