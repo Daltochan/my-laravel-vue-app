@@ -8,7 +8,8 @@
     @vite('resources/css/app.css')
 </head>
 <body class="antialiased">
-<div id="app">
+<div id="app" class="app-container">
+    <task-form class="form-overlay"></task-form>
     <map-component></map-component>
 </div>
 @vite('resources/js/app.js')

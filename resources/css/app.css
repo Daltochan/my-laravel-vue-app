@@ -3,3 +3,16 @@ html, body, #app {
     margin: 0;
     padding: 0;
 }
+.app-container {
+    position: relative;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+    display: none;
+}
